@@ -1,0 +1,34 @@
+name: Delete old workflow runs
+on:
+  workflow_dispatch:
+    schedule:
+        - cron: "0 18 * * *"
+  watch:
+    types: [started]
+    
+    inputs:
+      days: #要保留的天数
+        description: 'Number of days.'
+        required: true
+        default: 1
+      runs: #要为每个yml保留的个数
+        description: 'Number of runs.'
+        required: true
+        default: 1
+
+jobs:
+  del_runs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.PAT }}
+          repository: ${{ github.repository }}
+          retain_days: ${{ github.event.inputs.days }}
+          keep_minimum_runs: ${{ github.event.inputs.runs }}
+
+
+  
+  
+  
