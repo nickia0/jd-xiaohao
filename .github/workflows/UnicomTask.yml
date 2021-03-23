@@ -29,7 +29,7 @@ jobs:
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install -r other/requirements.txt
     - name: Build and publish
       env:
         USERS_COVER: ${{ secrets.USERS_COVER }}
