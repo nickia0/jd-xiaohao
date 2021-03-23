@@ -57,7 +57,14 @@ jobs:
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
           
           
-          
-          
+      - name: sync evine
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/RikudouPatrickstar/jd_shell.git"
+          source_branch: "master"
+          destination_branch: "evine"
+          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
+                 
           
           
