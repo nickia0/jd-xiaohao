@@ -77,7 +77,6 @@
 0 7-22/1 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_plantBean.js, tag=京东种豆得豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_plantBean_dark.png, enabled=false
 15 */2 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy.js, tag=宠汪汪, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_joy.png, enabled=false
 15 */1 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy_feedPets.js, tag=宠汪汪喂食, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_joy_feedPets.png, enabled=false
-13 0-21/3 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy_steal.js, tag=宠汪汪偷好友积分与狗粮, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_joy_steal.png, enabled=false
 0 0-16/8 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy_reward.js, tag=宠汪汪积分兑换, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_joy_reward.png, enabled=true
 10 9-20/2 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy_run.js, tag=宠汪汪邀请助力, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_joy_run.png, enabled=false
 8 */3 * * * https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_speed.js, tag=京东天天加速, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_speed_dark.png, enabled=false
