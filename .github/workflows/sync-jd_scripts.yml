@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    if: github.repository == 'oucr/scso'
+    if: github.repository == 'kddhi/akd'
     timeout-minutes: 2
 
     steps:
