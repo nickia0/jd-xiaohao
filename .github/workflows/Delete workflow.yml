@@ -14,7 +14,7 @@ on:
       runs: #要为每个yml保留的个数
         description: 'Number of runs.'
         required: true
-        default: 1
+        default: 0
 
 jobs:
   del_runs:
