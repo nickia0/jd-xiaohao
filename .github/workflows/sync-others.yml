@@ -55,34 +55,16 @@ jobs:
           source_branch: "master"
           destination_branch: "qinglong"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
-          
-          
-      - name: sync evine
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/RikudouPatrickstar/jd_shell.git"
-          source_branch: "master"
-          destination_branch: "evine"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
 
 
       - name: sync evine
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/RikudouPatrickstar/jd_shell.git"
+          source_repo: "https://github.com/q4w5e6/yyds.git"
           source_branch: "v4"
           destination_branch: "v4"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
           
-                 
-      - name: sync evine
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/RikudouPatrickstar/jd_shell.git"
-          source_branch: "docker"
-          destination_branch: "docker"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}      
+ 
           
