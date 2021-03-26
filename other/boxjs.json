@@ -1,9 +1,9 @@
 {
-  "id": "oxo.app.sub",
-  "name": "oxo应用订阅",
-  "author": "@oxo",
-  "icon": "https://raw.githubusercontent.com/oucr/scso/xxx/taotie.png",
-  "repo": "https://github.com/RikudouPatrickstar/jd_scripts",
+  "id": "lxk0301.app.sub",
+  "name": "lxk0301脚本订阅",
+  "author": "@lxk0301",
+  "icon": "https://avatars0.githubusercontent.com/u/21308593?s=52&v=4",
+  "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master/",
   "apps": [
     {
       "id": "JD_Cookies",
@@ -55,7 +55,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
         "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
@@ -81,7 +81,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
         "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
@@ -176,7 +176,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_fruit.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",
@@ -294,7 +294,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_pet.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc_mini.png",
@@ -380,7 +380,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_plantBean.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzd_mini.png",
@@ -405,20 +405,6 @@
           "val": false,
           "type": "boolean",
           "desc": "运行宠汪汪(jd_joy_steal.js)脚本时不发出系统弹窗通知"
-        },
-        {
-          "id": "jdJoyHelpFeed",
-          "name": "是否给好友喂食(默认不帮好友喂食)",
-          "val": false,
-          "type": "boolean",
-          "desc": "给好友喂食可得积分，但会消耗自己狗粮"
-        },
-        {
-          "id": "jdJoyStealCoin",
-          "name": "是否偷好友积分与狗粮(默认是)",
-          "val": true,
-          "type": "boolean",
-          "desc": "偷好友积分与狗粮"
         },
         {
           "id": "joyFeedCount",
@@ -447,7 +433,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
@@ -493,7 +479,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy_reward.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
@@ -579,7 +565,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_joy_run.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
@@ -607,7 +593,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_moneyTree.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdyqs_mini.png",
@@ -628,7 +614,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_speed.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdjs_mini.png",
@@ -680,7 +666,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_unsubscribe.js",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
@@ -715,7 +701,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "scripts":[
         {
           "name" : "东东超市",
@@ -751,7 +737,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "scripts": [
         {
           "name" : "东东超市兑换奖品",
@@ -803,7 +789,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/backUp/webhook.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/webhooks_mini.png",
@@ -842,7 +828,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/backUp/xmSports.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/xmyd_mini.png",
@@ -865,7 +851,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_jdfactory.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory_mini.png",
@@ -897,7 +883,7 @@
         "https://github.com/58xinian/icon/raw/master/jdgc.png"
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_dreamFactory.js"
     },
     {
@@ -925,7 +911,7 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png"
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts/master/jd_cfd.js"
     },
     {
@@ -942,7 +928,7 @@
         }
       ],
       "author": "@lxk0301",
-      "repo": "https://raw.githubusercontent.com/RikudouPatrickstar/jd_scripts",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "scripts":[
         {
           "name" : "京小兑",
@@ -956,3 +942,4 @@
     }
   ]
 }
+
