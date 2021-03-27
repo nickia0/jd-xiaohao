@@ -1,17 +1,13 @@
-name: sync-lxk0301/jd_scripts
+name: sync-jd_scripts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *'
-  watch:
-    types: started
-    
+    - cron: '*/30 0-16,22-23 * * *'
 jobs:
   sync:
     runs-on: ubuntu-18.04
-    if: ${{ github.event.repository.owner.id == github.event.sender.id && github.repository == 'kddhi/akd' }}
+    if: github.repository == 'RikudouPatrickstar/jd_scripts'
     timeout-minutes: 2
-
     steps:
     - name: Init Build Dependencies
       env:
@@ -31,7 +27,6 @@ jobs:
     # - name: Clone Master
     #   run: |
     #     git clone -b master git@gitee.com:lxk0301/jd_scripts.git master
-
     - name: Get Code
       run: |
         docker pull lxk0301/jd_scripts:latest
@@ -40,20 +35,12 @@ jobs:
         layer_file=$(cat manifest.json | jq ".[0]" | jq ".Layers" | jq ".[1]" | sed 's,",,g')
         cp $layer_file ./
         tar -xvf layer.tar
-    - name: Push master
+    - name: Push Master
       uses: ad-m/github-push-action@master
       with:
         directory: scripts
         github_token: ${{ secrets.PAT }}
         branch: master
-    
-    - name: Push main
-      uses: ad-m/github-push-action@master
-      with:
-        directory: scripts
-        github_token: ${{ secrets.PAT }}
-        branch: main
-
     - name: Delete Workflow Runs
       uses: Mattraks/delete-workflow-runs@main
       with:
