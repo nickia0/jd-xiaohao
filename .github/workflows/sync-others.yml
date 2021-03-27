@@ -66,16 +66,6 @@ jobs:
           destination_branch: "v4"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
           
- 
-      - name: sync JD
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/DoveBoy/scf.git"
-          source_branch: "master"
-          destination_branch: "script"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }} 
-
 
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@main
