@@ -75,3 +75,16 @@ jobs:
           source_branch: "master"
           destination_branch: "script"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }} 
+
+
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.PAT }}
+          repository: ${{ github.repository }}
+          retain_days: 1
+          keep_minimum_runs: 0
+          
+          
+          
+          
