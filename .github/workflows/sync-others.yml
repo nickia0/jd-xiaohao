@@ -19,23 +19,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync jd-base
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/RikudouPatrickstar/jd-base.git"
-          source_branch: "v3"
-          destination_branch: "base"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
-
-      - name: sync jd-base
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/dockere/jd-base.git"
-          source_branch: "master"
-          destination_branch: "dockere"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
 
       - name: sync jd-script
         uses: repo-sync/github-sync@v2
@@ -45,28 +28,8 @@ jobs:
           source_branch: "master"
           destination_branch: "ooo"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
-          
-          
-      - name: sync qinglong
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/whyour/qinglong.git"
-          source_branch: "master"
-          destination_branch: "qinglong"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
 
-
-      - name: sync evine
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/q4w5e6/yyds.git"
-          source_branch: "v4"
-          destination_branch: "v4"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}  
-          
-                  
+                
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@main
         with:
