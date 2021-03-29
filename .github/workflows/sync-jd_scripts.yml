@@ -3,7 +3,7 @@ name: sync-jd_scripts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 0,15 * * *'
+    - cron: '5 */2 * * *'
   repository_dispatch:
     types: sync-jd_scripts
 
