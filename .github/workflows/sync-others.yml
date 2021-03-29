@@ -28,16 +28,6 @@ jobs:
           source_branch: "master"
           destination_branch: "ooo"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
-
-
-      - name: sync jd-script
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/lion-goose/JD_Scripts.git"
-          source_branch: "master"
-          destination_branch: "xxx"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
           
           
       #- name: Delete Workflow Runs
