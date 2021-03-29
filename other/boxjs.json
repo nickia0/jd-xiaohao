@@ -12,7 +12,7 @@
       "descs_html": [
         "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ）。",
         "示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]",
-        "脚本地址【<a href=\"https://raw.githubusercontent.com/VidocqH/jd_scripts/master/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
+        "脚本地址【<a href=\"https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
         "使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code",
         "注：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie"
       ],
@@ -177,7 +177,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_fruit.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_fruit.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png"
@@ -295,7 +295,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_pet.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_pet.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc.png"
@@ -381,7 +381,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_plantBean.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_plantBean.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzd_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzd.png"
@@ -434,7 +434,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_joy.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_joy.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -480,7 +480,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_joy_reward.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_joy_reward.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -566,7 +566,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_joy_run.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_joy_run.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -594,7 +594,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_moneyTree.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_moneyTree.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdyqs_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdyqs.png"
@@ -615,7 +615,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_speed.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_speed.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdjs_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdjs.png"
@@ -667,7 +667,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_unsubscribe.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_unsubscribe.js",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
         "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
@@ -705,7 +705,7 @@
       "scripts":[
         {
           "name" : "东东超市",
-          "script" : "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_superMarket.js"
+          "script" : "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_superMarket.js"
         }
       ],
       "icons": [
@@ -741,7 +741,7 @@
       "scripts": [
         {
           "name" : "东东超市兑换奖品",
-          "script" : "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_blueCoin.js"
+          "script" : "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_blueCoin.js"
         }
       ],
       "icons": [
@@ -790,7 +790,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/backUp/webhook.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/backUp/webhook.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/webhooks_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/webhooks.png"
@@ -829,7 +829,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/backUp/xmSports.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/backUp/xmSports.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/xmyd_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/xmyd.png"
@@ -852,7 +852,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_jdfactory.js",
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_jdfactory.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory.png"
@@ -884,7 +884,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_dreamFactory.js"
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_dreamFactory.js"
     },
     {
       "id": "jd_jxCFD_invites",
@@ -912,7 +912,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_cfd.js"
+      "script": "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_cfd.js"
     },
     {
       "id": "jd_jxd",
@@ -932,7 +932,7 @@
       "scripts":[
         {
           "name" : "京小兑",
-          "script" : "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_jxd.js"
+          "script" : "https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_jxd.js"
         }
       ],
       "icons": [
@@ -942,5 +942,4 @@
     }
   ]
 }
-
 
