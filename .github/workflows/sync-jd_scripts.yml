@@ -22,7 +22,7 @@ jobs:
     - name: Prepare
       run: |
         mkdir -p ~/.ssh
-        echo -e "${{ secrets.LXKEY }}" > ~/.ssh/id_rsa
+        echo -e "${{ secrets.L }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan gitee.com > ~/.ssh/known_hosts
     - name: Clone Master
