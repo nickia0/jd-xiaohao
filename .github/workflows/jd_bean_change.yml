@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: vidocqh/jd_scripts
+          repository: lion-goose/JD_Scripts
           ref: master
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -38,7 +38,7 @@ jobs:
           npm install
       - name: run script
         run: |
-          python3 sorryLXK.py
+          python3 other/sorryLXK.py
       - name: '运行 【京豆变动通知】'
         run: |
           node jd_bean_change.js
