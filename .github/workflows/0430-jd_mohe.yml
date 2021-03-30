@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: A-jd_mohe_0430
+name: 5G超级盲盒 0430
 
 on:
   workflow_dispatch:
@@ -45,26 +45,7 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          PETSHARECODES: ${{ secrets.PETSHARECODES }}
+          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          PET_NOTIFY_CONTROL: ${{ secrets.PET_NOTIFY_CONTROL }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          DREAM_FACTORY_SHARE_CODES: ${{ secrets.DREAM_FACTORY_SHARE_CODES }}
-          JDJOY_SHARECODES: ${{ secrets.JDJOY_SHARECODES }}
-          FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
-          PLANT_BEAN_SHARECODES: ${{ secrets.PLANT_BEAN_SHARECODES }}
-          SUPERMARKET_SHARECODES: ${{ secrets.SUPERMARKET_SHARECODES }}
-          DDFACTORY_SHARECODES: ${{ secrets.DDFACTORY_SHARECODES }}
-          JDZZ_SHARECODES: ${{ secrets.JDZZ_SHARECODES }}
-          BOOKSHOP_SHARECODES: ${{ secrets.BOOKSHOP_SHARECODES }}
-          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
-          JXNC_SHARECODES: ${{ secrets.JXNC_SHARECODES }}
-          JDSGMH_SHARECODES: ${{ secrets.JDSGMH_SHARECODES }}
-          JDNIAN_SHARECODES: ${{ secrets.JDNIAN_SHARECODES }}
-          JDSXSY_SHARECODES: ${{ secrets.JDSXSY_SHARECODES }}
+          QYWX_AM: ${{ secrets.QYWX_AM }}
