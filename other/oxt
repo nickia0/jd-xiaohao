@@ -43,7 +43,7 @@
 3 0,18 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=false
 0 0 * * * https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_club_lottery.js, tag=摇京豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdyjd.png, enabled=false
 10 0 * * * https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_shop.js, tag=进店领豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_shop.png, enabled=false
-1 1 * * * https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_redPacket.js, tag=京东全民开红包, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=false
+1 1,21,23 * * * https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_redPacket.js, tag=京东全民开红包, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=false
 11 1 * * * https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/jdlottery.png, enabled=false
 11 1 * * * https://github.com/yangtingxiao/QuantumultX/raw/master/scripts/jd/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/jdlottery.png, enabled=true
 11 9 * * * https://raw.githubusercontent.com/lion-goose/JD_Scripts/master/jd_rankingList.js, tag=京东排行榜, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=false
