@@ -12,7 +12,7 @@
       "descs_html": [
         "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ）。",
         "示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]",
-        "脚本地址【<a href=\"https://raw.githubusercontent.com/happyshouforever/kshd/master/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
+        "脚本地址【<a href=\"https://raw.githubusercontent.com/VidocqH/jd_scripts/master/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
         "使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code",
         "注：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie"
       ],
@@ -177,7 +177,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_fruit.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_fruit.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png"
@@ -254,70 +254,70 @@
           "id": "jd2_pet_name",
           "name": "京东账号2昵称",
           "val": "",
-          "type": "text",
-          "desc": "京东账号2昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd2_pet1",
-          "name": "账号二互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet2",
-          "name": "账号二互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet3",
-          "name": "账号二互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet4",
-          "name": "账号二互助码4",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet5",
-          "name": "账号二互助码5",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        }
-      ],
-      "author": "@lxk0301",
-      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_pet.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdmc_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdmc.png"
-      ]
-    },
-    {
-      "id": "jd_plantBean",
-      "name": "京东种豆",
-      "keys": [
-        "jd_plant_bean_name",
-        "jd_plantBean1",
-        "jd_plantBean2",
-        "jd_plantBean3",
-        "jd2_plant_bean_name",
-        "jd2_plantBean1",
-        "jd2_plantBean2",
-        "jd2_plantBean3"
-      ],
-      "settings": [
-        {
-          "id": "jdPlantBeanNotify",
-          "name": "静默运行",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           "val": true,
           "type": "boolean",
           "desc": "运行种豆脚本时不发出系统通知"
@@ -381,67 +381,71 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_plantBean.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdzd_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdzd.png"
-      ]
-    },
-    {
-      "id": "jd_Joy",
-      "name": "宠汪汪",
-      "keys": [],
-      "settings": [
-        {
-          "id": "jdJoyNotify",
-          "name": "静默运行",
-          "val": true,
-          "type": "boolean",
-          "desc": "运行宠汪汪(jd_joy.js)脚本时不发出系统弹窗通知"
-        },
-        {
-          "id": "jdJoyStealNotify",
-          "name": "静默运行",
-          "val": false,
-          "type": "boolean",
-          "desc": "运行宠汪汪(jd_joy_steal.js)脚本时不发出系统弹窗通知"
-        },
-        {
-          "id": "joyFeedCount",
-          "name": "每次喂养数量（默认10g）",
-          "val": "10",
-          "type": "radios",
-          "desc": "每次喂养狗粮克数(默认10g)",
-          "items": [
-            {
-              "key": "10",
-              "label": "消耗10g"
-            },
-            {
-              "key": "20",
-              "label": "消耗20g"
-            },
-            {
-              "key": "40",
-              "label": "消耗40g"
-            },
-            {
-              "key": "80",
-              "label": "消耗80g"
-            }
-          ]
-        }
-      ],
-      "author": "@lxk0301",
-      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_joy.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
-      ]
-    },
-    {
-      "id": "jd_Joy_Reward",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_plantBean.js",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       "name": "宠汪汪积分兑换京豆",
       "keys": [],
       "settings": [
@@ -480,7 +484,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_joy_reward.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_joy_reward.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -566,7 +570,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_joy_run.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_joy_run.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -594,7 +598,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_moneyTree.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_moneyTree.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdyqs_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdyqs.png"
@@ -615,7 +619,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_speed.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_speed.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdjs_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdjs.png"
@@ -667,7 +671,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_unsubscribe.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_unsubscribe.js",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
         "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
@@ -705,7 +709,7 @@
       "scripts":[
         {
           "name" : "东东超市",
-          "script" : "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_superMarket.js"
+          "script" : "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_superMarket.js"
         }
       ],
       "icons": [
@@ -741,7 +745,7 @@
       "scripts": [
         {
           "name" : "东东超市兑换奖品",
-          "script" : "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_blueCoin.js"
+          "script" : "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_blueCoin.js"
         }
       ],
       "icons": [
@@ -790,7 +794,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/backUp/webhook.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/backUp/webhook.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/webhooks_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/webhooks.png"
@@ -829,7 +833,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/backUp/xmSports.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/backUp/xmSports.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/xmyd_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/xmyd.png"
@@ -852,7 +856,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_jdfactory.js",
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_jdfactory.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory.png"
@@ -884,7 +888,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_dreamFactory.js"
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_dreamFactory.js"
     },
     {
       "id": "jd_jxCFD_invites",
@@ -912,7 +916,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_cfd.js"
+      "script": "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_cfd.js"
     },
     {
       "id": "jd_jxd",
@@ -932,7 +936,7 @@
       "scripts":[
         {
           "name" : "京小兑",
-          "script" : "https://raw.githubusercontent.com/happyshouforever/kshd/master/jd_jxd.js"
+          "script" : "https://raw.githubusercontent.com/VidocqH/jd_scripts/master/jd_jxd.js"
         }
       ],
       "icons": [
@@ -942,4 +946,3 @@
     }
   ]
 }
-
