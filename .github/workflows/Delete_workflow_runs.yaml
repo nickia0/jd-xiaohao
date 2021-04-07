@@ -2,7 +2,7 @@ name: Delete workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 */2 * * *'
 
 
 jobs:
