@@ -29,16 +29,6 @@ jobs:
           destination_branch: "ooo"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
           
-
-      - name: sync jd-script
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/DoveBoy/dust.git"
-          source_branch: "dust"
-          destination_branch: "dust"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
-          
           
       #- name: Delete Workflow Runs
       # uses: Mattraks/delete-workflow-runs@main
