@@ -1,39 +1,37 @@
-# File: .github/workflows/repo-sync.yml
 name: sync-dust
+
 on:
+  workflow_dispatch:
   schedule:
     - cron: '5 */2 * * *'
-  workflow_dispatch:
-  watch:
-    types: started
   repository_dispatch:
-    types: sync-others
+    types: sync-jd_scripts
+
 jobs:
-  repo-sync:
-    env:
-      SSH_PRIVATE_KEY: ${{ github.event.client_payload.SSH_PRIVATE_KEY || secrets.SSH_PRIVATE_KEY }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+  build:
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-
-
-      - name: sync jd-script
-        uses: repo-sync/github-sync@v2
-        if: env.SSH_PRIVATE_KEY
-        with:
-          source_repo: "https://github.com/monk-coder/dust.git"
-          source_branch: "dust"
-          destination_branch: "dust"
-          github_token: ${{ github.event.client_payload.SSH_PRIVATE_KEY || secrets.SSH_PRIVATE_KEY }}
-          
-          
-      #- name: Delete Workflow Runs
-      # uses: Mattraks/delete-workflow-runs@main
-      # with:
-      #   token: ${{ secrets.PAT }}
-      #   repository: ${{ github.repository }}
-      #   retain_days: 1
-      #   keep_minimum_runs: 0
+    
+    - name: Init Build Dependencies
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo -E rm -rf /etc/apt/sources.list.d
+        sudo -E apt-get update -y && apt-get install -y build-essential git git-core curl wget && apt-get clean -y
+        git config --global user.name 'GitHub Actions' && git config --global user.email 'noreply@github.com'
+    - name: Prepare
+      run: |
+        mkdir -p ~/.ssh
+        echo -e "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan gitee.com > ~/.ssh/known_hosts
+    - name: Clone Master
+      run: |
+        git clone -b master git@github.com:monk-coder/dust.git dust
+    - name: Push Dust
+      uses: ad-m/github-push-action@master
+      with:
+        directory: dust
+        github_token: ${{ secrets.PAT }}
+        branch: dust
+        repository: "kddhi/akd"
