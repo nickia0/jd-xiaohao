@@ -6,7 +6,7 @@ name: A 京东手机狂欢城活动 0420
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 17-23/6,19-23/1 * * *'
+    - cron: '0 0-11,17-23/6,19-23/1 * * *'
   watch:
     types: [started]
   repository_dispatch:
