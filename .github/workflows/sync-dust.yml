@@ -33,5 +33,5 @@ jobs:
       with:
         directory: dust
         github_token: ${{ secrets.PAT }}
-        branch: dust
+        branch: xxx
         repository: "kddhi/akd"
