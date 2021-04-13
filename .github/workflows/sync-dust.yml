@@ -19,15 +19,10 @@ jobs:
         sudo -E rm -rf /etc/apt/sources.list.d
         sudo -E apt-get update -y && apt-get install -y build-essential git git-core curl wget && apt-get clean -y
         git config --global user.name 'GitHub Actions' && git config --global user.email 'noreply@github.com'
-    - name: Prepare
-      run: |
-        mkdir -p ~/.ssh
-        echo -e "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan gitee.com > ~/.ssh/known_hosts
+
     - name: Clone Master
       run: |
-        git clone -b dust git@github.com:monk-coder/dust.git dust
+        git clone -b dust git@share.r2ray.com:dust dust
     - name: Push Dust
       uses: ad-m/github-push-action@master
       with:
