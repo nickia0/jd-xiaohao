@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: merge-from-oxo
+name: merge-branch
 on:
   schedule:
     - cron: '30 */2 * * *'
