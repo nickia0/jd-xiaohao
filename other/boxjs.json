@@ -10,7 +10,7 @@
       "name": "京东多账号 Ck 管理",
       "keys": ["CookiesJD"],
       "descs_html": [
-        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ）。",
+        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
         "示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]",
         "脚本地址【<a href=\"https://raw.githubusercontent.com/gjlovezzh/jd_scripts/master/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
         "使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code",
@@ -33,7 +33,7 @@
       ],
       "author": "@dompling",
       "repo": "https://github.com/dompling/Script",
-      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
+      "script": "https://raw.githubusercontent.com/gjlovezzh/jd_scripts/master/jd_joy_feedPets.js"
     },
     {
       "id": "JD_UA",
@@ -105,9 +105,16 @@
           "desc": "运行东东农场脚本时不发出系统通知"
         },
         {
+          "id": "jdFruitBeanCard",
+          "name": "使用水滴换豆卡",
+          "val": false,
+          "type": "boolean",
+          "desc": "使用水滴换豆卡(如果出现限时活动是100g水换20豆,此时比浇水划算,推荐换豆)"
+        },
+        {
           "id": "jd_fruit_inviter",
           "name": "东东农场好友邀请码 列表",
-          "val": "",
+          "val": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
           "type": "textarea",
           "autoGrow": true,
           "rows": 8,
@@ -142,7 +149,7 @@
         {
           "id": "jd_pet_inviter",
           "name": "东东萌宠好友邀请码 列表",
-          "val": "",
+          "val": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
           "type": "textarea",
           "autoGrow": true,
           "rows": 8,
@@ -177,7 +184,7 @@
         {
           "id": "jd_plantbean_inviter",
           "name": "京东种豆好友邀请码 列表",
-          "val": "",
+          "val": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
           "type": "textarea",
           "autoGrow": true,
           "rows": 8,
