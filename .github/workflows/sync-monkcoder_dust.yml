@@ -1,0 +1,51 @@
+name: sync-monkcoder_dust
+
+on:
+  schedule:
+    - cron: "40 * * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/blank.yml"
+jobs:
+  update:
+    if: github.repository == 'kddhi/akd'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:        
+      - name: Checkout codebase
+        uses: actions/checkout@v2
+
+          
+      - name: 复制 diy 脚本
+        run: |
+          # 复制 dust 脚本
+          i=1
+          while [ "$i" -le 5 ]; do
+              folders="$(curl -sX POST "https://share.r2ray.com/dust/" | grep -oP "name.*?\.folder" | cut -d, -f1 | cut -d\" -f3 | grep -vE "backup|pics|rewrite" | tr "\n" " ")"
+              test -n "$folders" && { for jsname in $(ls dust_*.js); do mv -f $jsname $(echo $jsname | sed "s/dust_/temp_dust_/"); done; break; }
+              test -z "$folders" && { echo 第 $i/5 次目录列表获取失败; sleep 5; i=$(( i + 1 )); }
+          done
+          for folder in $folders; do
+              i=1
+              while [ "$i" -le 5 ]; do
+                  jsnames="$(curl -sX POST "https://share.r2ray.com/dust/${folder}/" | grep -oP "name.*?\.js\"" | grep -oE "[^\"]*\.js\"" | cut -d\" -f1 | tr "\n" " ")"
+                  test -n "$jsnames" && break || { echo 第 $i/5 次 $folder 目录下文件列表获取失败; sleep 5; i=$(( i + 1 )); }
+              done
+              for jsname in $jsnames; do 
+                  i=1
+                  while [ "$i" -le 5 ]; do
+                    [ "$i" -lt 5 ] && curl -so dust_${jsname} "https://share.r2ray.com/dust/${folder}/${jsname}"
+                    cat dust_${jsname} | grep -qE "^function" && break || { echo 第 $i/5 次 $folder 目录下 $jsname 文件下载失败; sleep 5; i=$(( i + 1 )); }
+                    [ "$i" -eq 5 ] && [ -f "temp_dust_${jsname}" ] && mv -f temp_dust_${jsname} dust_${jsname}
+                  done
+              done
+          done
+          rm -rf temp_dust_*.js
+      - name: diy push
+        run: |
+          # 删除临时目录后push
+          rm -rf hundun longzhuzhu
+          git config --local user.email "action@github.com" && git config --local user.name "GitHub Action" && git add .
+          git commit -am "update" | grep -oE "nothing to commit" && exit 0 || git push -v --progress
