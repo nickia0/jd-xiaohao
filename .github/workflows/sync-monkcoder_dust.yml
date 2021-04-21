@@ -3,7 +3,7 @@ name: sync-monkcoder_dust
 on:
   workflow_dispatch:
   schedule:
-    - cron: "40 * * * *"
+    - cron: "0 0-12/1 * * *"
   push:
     branches:
       - main
