@@ -49,5 +49,5 @@ jobs:
           # 删除临时目录后push
           rm -rf hundun longzhuzhu
           git config --local user.email "action@github.com" && git config --local user.name "GitHub Action" && git add .
-          git commit -am "update" | grep -oE "nothing to commit" && exit 0 || git push -v --progress
+          git commit -am "update" | grep -oE "nothing to commit" && exit 0 || git push -b bust--progress
 
