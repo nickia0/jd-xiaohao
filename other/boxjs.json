@@ -1,10 +1,332 @@
 {
-  "id": "lxk0301.app.sub",
-  "name": "lxk0301脚本订阅",
-  "author": "@lxk0301",
-  "icon": "https://avatars0.githubusercontent.com/u/21308593?s=52&v=4",
-  "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master/",
+  "id": "oxo.app.sub",
+  "name": "脚本订阅",
+  "author": "@oxo",
+  "icon": "https://raw.githubusercontent.com/kddhi/akd/main/other/taotie.png",
+  "repo": "https://github.com/kddhi/akd",
   "apps": [
+    {
+      "author": "@sunert", 
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>", 
+        "<br />", 
+        "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
+      ], 
+      "keys": [
+        "sy_token_wb", 
+        "wb_cookie", 
+        "wb_nick"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/weibo.js", 
+      "id": "weibo", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js", 
+      "name": "新浪微博", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/youth/readme.md\">配置说明</a></h4>", 
+        "<br />", 
+        "<p>其中<font color='#FF0000',font-weight: bold>zq_nick、zqcash</font>和<font color='#FF0000',font-weight: bold>zqcard</font>为昵称、提现金额和早起打卡开关，无需另外获取，相关项设置后自动生成，cashurl_zq和cashbody_zq为提现请求，获取后方可自动提现，可选</p>"
+      ], 
+      "keys": [
+        "zq_nick", 
+        "youthheader_zq", 
+        "read_zq", 
+        "readtime_zq", 
+        "cashurl_zq", 
+        "cashbody_zq", 
+        "zqcash", 
+        "zqcard"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth.js", 
+      "id": "youth", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js", 
+      "settings": [
+        {
+          "id": "zqcard", 
+          "val": "false", 
+          "name": "打卡赚钱", 
+          "type": "boolean", 
+          "desc": "每日打卡报名及早起打卡"
+        }, 
+        {
+          "id": "zqtime", 
+          "val": "05", 
+          "name": "打卡时间", 
+          "type": "number", 
+          "desc": "每日早起打卡时间"
+        }, 
+        {
+          "id": "delay_rotary_zq", 
+          "val": "10", 
+          "name": "转盘时间间隔", 
+          "type": "number", 
+          "desc": "间隔时间设置，如1秒填1即可"
+        }, 
+        {
+          "id": "notifytimes", 
+          "val": "", 
+          "name": "通知频率 (点击查看设置说明)", 
+          "type": "number", 
+          "desc": "设定通知频率，前三次为全部通知，之后转盘次数/设定频率整除时通知，如设置0为无通知，设置1为全部通知，设置其他数可整除余0时通知，默认值50"
+        }, 
+        {
+          "id": "zqcash", 
+          "val": "30", 
+          "name": "提现金额", 
+          "type": "radios", 
+          "desc": "自动提现金额需和获取提现请求保持一致", 
+          "items": [
+            {
+              "key": "10", 
+              "label": "10元"
+            }, 
+            {
+              "key": "30", 
+              "label": "30元"
+            }, 
+            {
+              "key": "100", 
+              "label": "100元"
+            }
+          ]
+        }
+      ], 
+      "name": "中青看点", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "keys": [
+        "cookie_ks"
+      ], 
+      "settings": [
+        {
+          "id": "cash_nebulaks", 
+          "val": "30", 
+          "name": "极速版提现", 
+          "type": "number", 
+          "desc": "极速版提现金额，默认30"
+        }, 
+        {
+          "id": "cash_nebulaks", 
+          "val": "30", 
+          "name": "极速版提现", 
+          "type": "radios", 
+          "items": [
+            {
+              "key": "ALIPAY", 
+              "label": "支付宝"
+            }, 
+            {
+              "key": "WECHAT", 
+              "label": "微信"
+            }
+          ], 
+          "desc": "极速版提现金额，默认30，前提是绑定支付方式"
+        }
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/kuaishou.js", 
+      "id": "kuaishou", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js", 
+      "name": "快手极速版", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/kuaishou.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/kuaishou.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "keys": [
+        "sy_cookie_dj"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/jddj.js", 
+      "id": "jddj", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js", 
+      "name": "京东到家", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/jddj.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/jddj.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "keys": [
+        "baidu_nick",
+        "bdspeed",
+        "cash_baidu"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/baiduspeed.js", 
+      "id": "baidu_speed", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baiduspeed.js", 
+      "settings": [
+        {
+          "items": [
+            {
+              "key": "5", 
+              "label": "5元"
+            }, 
+            {
+              "key": "30", 
+              "label": "30元"
+            }, 
+            {
+              "key": "50", 
+              "label": "50元"
+            }, 
+            {
+              "key": "100", 
+              "label": "100元"
+            }
+          ], 
+          "id": "cash_baidu", 
+          "val": "30", 
+          "name": "提现金额", 
+          "type": "radios", 
+          "desc": "自动提现金额"
+        }, 
+        {
+          "id": "on_baidu", 
+          "val": true, 
+          "name": "通知开关", 
+          "type": "boolean", 
+          "desc": "任务通知开关"
+        },
+        {
+          "id": "task_baidu", 
+          "val": true, 
+          "name": "任务开关", 
+          "type": "boolean", 
+          "desc": "除提现和兑换金币外开关，默认开启所有任务"
+        },
+        {
+          "id": "bd_Agent", 
+          "val": true, 
+          "name": "User-Agent", 
+          "type": "textarea", 
+          "desc": "自定义百度极速版UA或者可自动获取"
+        }
+      ], 
+      "name": "百度极速任务", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/baiduspeed_mini.png", 
+        "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/baiduspeed.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "keys": [
+        "sy_signurl_txnews", 
+        "sy_cookie_txnews", 
+        "video_txnews", 
+        "prize_txnews",
+        "txnews_id"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/txnews.js", 
+      "id": "txnews", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js", 
+      "settings": [
+        {
+          "id": "notifynum", 
+          "placeholder": "默认50 (点击以展开说明)", 
+          "val": "", 
+          "name": "通知频率", 
+          "type": "number", 
+          "desc": "阅读篇数间隔通知开为1，常关为0(默认50篇)"
+        }, 
+        {
+          "id": "txnews_id", 
+          "placeholder": "stair_redpack_chajian", 
+          "val": "", 
+          "name": "自定义活动ID", 
+          "type": "text"
+        }
+      ], 
+      "name": "腾讯新闻", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/txnews.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/txnews.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "keys": [
+        "city", 
+        "citynum", 
+        "cut", 
+        "day_desc", 
+        "hour_desc", 
+        "index_desc"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/moji.js", 
+      "id": "moji", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/moji.js", 
+      "settings": [
+        {
+          "id": "city", 
+          "val": "北京", 
+          "name": "城市", 
+          "type": "text", 
+          "desc": "请填写中文地区，可选择地市区和部分景区"
+        }, 
+        {
+          "id": "citynum", 
+          "placeholder": "默认1 (点击以展开说明)", 
+          "val": "", 
+          "name": "城市序号", 
+          "type": "number", 
+          "desc": "选择地区，请填写日志内地区前的数字序号"
+        }, 
+        {
+          "id": "cut", 
+          "val": false, 
+          "name": "精简日志模式", 
+          "type": "boolean", 
+          "desc": "显示详情描述，默认关闭日志"
+        }, 
+        {
+          "id": "day_desc", 
+          "val": true, 
+          "name": "每周天气", 
+          "type": "boolean", 
+          "desc": "每周天气接口，可显示6天天气情况"
+        }, 
+        {
+          "id": "hour_desc", 
+          "val": false, 
+          "name": "小时天气", 
+          "type": "boolean", 
+          "desc": "未来6小时天气情况"
+        }, 
+        {
+          "id": "forty_desc", 
+          "val": false, 
+          "name": "40天预告", 
+          "type": "boolean", 
+          "desc": "未来40天天气预告"
+        }, 
+        {
+          "id": "index_desc", 
+          "val": true, 
+          "name": "生活指数", 
+          "type": "boolean", 
+          "desc": "可显示生活指数情况"
+        }
+      ], 
+      "name": "墨迹天气", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/moji.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/moji.png"
+      ]
+    }, 
     {
       "id": "JD_Cookies",
       "name": "京东多账号 Ck 管理",
@@ -93,8 +415,8 @@
       "keys": ["jd_fruit_inviter"],
       "descs_html": [
         "请在输入框输入跟你互助的东东农场的好友互助码",
-        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1@账号1-好友2<br/><br/>账号2-好友1@账号2-好友2",
-        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写即可"
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
       "settings": [
         {
@@ -136,8 +458,8 @@
       "keys": ["jd_pet_inviter"],
       "descs_html": [
         "请在输入框输入跟你互助的东东萌宠的好友互助码",
-        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1@账号1-好友2<br/><br/>账号2-好友1@账号2-好友2",
-        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写即可"
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
       "settings": [
         {
@@ -172,8 +494,8 @@
       "keys": ["jd_plantbean_inviter"],
       "descs_html": [
         "请在输入框输入跟你互助的京东种豆得豆的好友互助码",
-        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1@账号1-好友2<br/><br/>账号2-好友1@账号2-好友2",
-        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写即可"
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
       "settings": [
         {
@@ -406,9 +728,9 @@
         {
           "id": "MONEY_TREE_SELL_FRUIT",
           "name": "是否卖出金果获得金币",
-          "val": false,
+          "val": true,
           "type": "boolean",
-          "desc": "是否卖出金果获得金币,金币具有有效期，默认不卖出"
+          "desc": "是否卖出金果获得金币,金币具有有效期，默认卖出"
         }
       ],
       "author": "@lxk0301",
@@ -636,8 +958,8 @@
       "keys": ["jd_jxFactory"],
       "descs_html": [
         "请在输入框输入跟你互助的京喜工厂的好友互助码",
-        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1@账号1-好友2<br/><br/>账号2-好友1@账号2-好友2",
-        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写即可"
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
       "settings": [
         {
@@ -665,8 +987,8 @@
       "keys": ["jd_jxCFD"],
       "descs_html": [
         "请在输入框输入跟你互助的京喜财富岛的好友互助码",
-        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1@账号1-好友2<br/><br/>账号2-好友1@账号2-好友2",
-        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写即可"
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
       "settings": [
         {
@@ -687,6 +1009,42 @@
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
       "script": "https://raw.githubusercontent.com/gjlovezzh/jd_scripts/master/jd_cfd.js"
+    },
+    {
+      "id": "jd_cash",
+      "name": "签到领现金",
+      "keys": ["jd_cash_invite"],
+      "descs_html": [
+        "请在输入框输入跟你互助的签到领现金的好友互助码",
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
+      ],
+      "settings": [
+        {
+          "id": "cash_exchange",
+          "name": "是否消耗红包兑换京豆",
+          "val": true,
+          "type": "boolean",
+          "desc": "是否消耗2元红包兑换200京豆，一周可换四次，默认是"
+        },
+        {
+          "id": "jd_cash_invite",
+          "name": "签到领现金好友邀请码 列表",
+          "val": "",
+          "placeholder": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "签到领现金邀请码,同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+      ],
+      "author": "@lxk0301",
+      "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
+      "script": "https://raw.githubusercontent.com/gjlovezzh/jd_scripts/master/jd_cash.js"
     },
     {
       "id": "jd_jxd",
