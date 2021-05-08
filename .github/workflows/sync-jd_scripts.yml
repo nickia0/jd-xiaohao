@@ -36,14 +36,5 @@ jobs:
         branch: oxo
         repository: "kddhi/akd"
 
-    #- name: Clone Main
-    # run: |
-    #   git clone -b main git@gitee.com:lxk0301/jd_scripts.git main
-    #- name: Push Main
-    # uses: ad-m/github-push-action@master
-    # with:
-    #   directory: main
-    #   github_token: ${{ secrets.PAT }}
-    #   branch: main
-    #   repository: "lion-goose/JD_Scripts"
+
 
