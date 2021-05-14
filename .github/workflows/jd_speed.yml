@@ -20,8 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: vidocqh/jd_scripts
-          ref: master
+          repository: gjlovezzh/jd_scripts
+          ref: action
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
