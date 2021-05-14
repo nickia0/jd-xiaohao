@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: '0 2,15 * * *' #此处为UTC-0时间
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
     types: jd_market_lottery
 jobs:
@@ -18,8 +18,10 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/nbzongzong/jd_scripts1207.git ~/scripts
+        uses: actions/checkout@v2
+        with:
+          repository: gjlovezzh/jd_scripts
+          ref: action
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -31,19 +33,20 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
+      - name: npm install
+        run: |
+          npm install
+      - name: run script
+        run: |
+          python3 sorryLXK.py
       - name: '运行 【幸运大转盘】'
         run: |
-          cd  ~/scripts
-          npm install
           node jd_market_lottery.js
-          
-          
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
-          
-
-          #tg推送
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          QYWX_KEY: ${{ secrets.QYWX_KEY }}
+          QYWX_AM: ${{ secrets.QYWX_AM }}
