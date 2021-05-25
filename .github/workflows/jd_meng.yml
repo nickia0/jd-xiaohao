@@ -41,7 +41,7 @@ jobs:
           python3 sorryLXK.py
       - name: '运行 【618动物联萌】'
         run: |
-          node jd_rankingList.js
+          node jd_zoo.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
